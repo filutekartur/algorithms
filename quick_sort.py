@@ -14,10 +14,8 @@ def qs(l,st,en):
         tmp=l[i+1]
         l[i+1]=l[piv]
         l[piv]=tmp 
-    else:
-         return True
-    qs(l,st,i)#left
-    qs(l,i+1,en)#right
+        qs(l,st,i)#left
+        qs(l,i+1,en)#right
 
 lista=[randint(0,10000) for x in range(randint(1,100))]
 qs(lista,0,len(lista)-1)
