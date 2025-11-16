@@ -1,7 +1,7 @@
-def fac1(x):
+def fac(x):
     if x>1:
-        return x*fac1(x-1)
+        return x*fac(x-1)
     else:
         return 1
 
-print(fac1(5))
+print(fac(5))
