@@ -6,7 +6,7 @@ def ins(l):
         j=i
         temp=l[j]
         while True:
-            if temp<l[j-1] and j>0:
+            if j>0 and temp<l[j-1]:
                 l[j]=l[j-1]
                 j-=1
             else:
